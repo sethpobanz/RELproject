@@ -6,6 +6,16 @@
   --accent-two: #c49799;
 }
 
+* {
+  margin: 0;
+  line-height: calc(2em + 0.5rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto Condensed", sans-serif;
   color: var(--color-font);
@@ -52,6 +62,7 @@ h1 {
 .hero {
   height: 100vh;
   position: relative;
+  object-fit: fill;
 }
 
 .hero .text-wrapper {
@@ -91,5 +102,29 @@ body header nav ul {
   transition: color 300ms ease;
 }
 .button[href]:hover {
+  color: var(--accent-two);
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin: 0 0rem;
+  padding-top: 5rem;
+}
+.cards img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.card {
+  transition: color 300ms;
+  flex: 1 1 0;
+  margin-bottom: 10rem;
+  text-decoration: none;
+  color: var(--color-font);
+}
+
+.card:hover {
   color: var(--accent-two);
 }
