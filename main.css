@@ -32,13 +32,15 @@ h1 {
   font-family: "Anton", sans-serif;
   font-size: 5rem;
   margin-bottom: 0.5em;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 .hero img {
   width: 100%;
   height: auto;
 }
-
+p {
+  margin-top: 2rem;
+}
 .hero h1 {
   padding-top: 35rem;
   font-size: 4rem;
@@ -86,7 +88,10 @@ h1 {
     rgb(0 0 0 / 90%)
   );
 }
-
+header {
+  display: block;
+  background-color: lightgray;
+}
 body header nav ul {
   display: flex;
   flex-direction: row;
@@ -124,8 +129,32 @@ body header nav ul {
   margin-bottom: 10rem;
   text-decoration: none;
   color: var(--color-font);
+  text-align: center;
 }
 
 .card:hover {
   color: var(--accent-two);
+}
+
+footer {
+  display: block;
+  color: black;
+  background-color: lightgray;
+  height: 15vh;
+  text-align: center;
+}
+
+body .panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: 2rem;
+  margin-top: 12rem;
+}
+
+body .panel .text-wrapper {
+  grid-column: 1;
+}
+body .panel .image-wrapper {
+  grid-column: 2;
 }
